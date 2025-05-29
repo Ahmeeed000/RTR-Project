@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ahmed Farid" />
+    <meta name="description" content="Contact information for any queries" />
+    <title>Contact Us - RTR</title>
+    <link rel="icon" href="books.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<hr>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="RateYours.html">Rate Yours</a></li>
+            </ul>
+        </nav>
+        <hr />
+        <h2>Our Contact Form</h2>
+        <fieldset>
+            <legend><strong>Reach out to us</strong></legend>
+            <form action="https://httpbin.org/get" method="get">
+                <label for="name-email">Name/Email</label>
+                <input type="text" name="name-email" id="name-email" required />
+
+                <label for="more-suggestions">More suggestions</label>
+                <input type="text" name="more-suggestions" id="more-suggestions" />
+
+                <label for="decade">Decade</label>
+                <input type="number" name="decade" id="decade" min="1970" max="2020" step="10" value="2000" />
+
+                <br />
+
+                <label for="edition">Edition</label>
+                <select name="edition" id="edition">
+                    <option value="hardcover">Hardcover</option>
+                    <option value="paperback">Paperback</option>
+                    <option value="leather">Leather</option>
+                </select>
+                 </form>
+        </fieldset>
+        <br />
+        <hr />
+        <fieldset>
+            <legend><strong>More Info</strong></legend>
+            <textarea name="textarea" id="textarea"></textarea>
+            <button type="submit">Send</button>
+        </fieldset>
+</body>
+</html>
